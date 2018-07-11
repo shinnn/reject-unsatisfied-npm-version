@@ -1,0 +1,39 @@
+{
+	"name": "reject-unsatisfied-npm-version",
+	"version": "1.0.0",
+	"description": "Make a Promise rejection unless the currently installed npm CLI satisfies the required version",
+	"repository": "shinnn/reject-unsatisfied-npm-version",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "nyc --reporter=html --reporter=text node test.js"
+	},
+	"license": "ISC",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"reject",
+		"rejection",
+		"refuse",
+		"promise",
+		"npm",
+		"version",
+		"semver",
+		"check",
+		"validate"
+	],
+	"dependencies": {
+		"npm-cli-version": "^1.0.0",
+		"npm-version-compare": "^1.0.0"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config-node": "^6.0.0",
+		"eslint": "^5.1.0",
+		"nyc": "^12.0.2",
+		"tape": "^4.9.1"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn/node"
+	}
+}
